@@ -1,0 +1,107 @@
+/*events.css main*/
+
+html,body {
+    width: 100%;
+    height: 100%;
+	background-color:#f7f7f7;
+}
+
+
+.col-md-4,.col-sm-6{
+	margin-bottom:30px;
+}
+
+section{
+	padding-top:100px;
+	padding-bottom:100px;
+}
+
+.header{
+	width:100%;
+    height:100%;
+	text-align:center;   
+}
+
+.section-heading{
+	font-weight:600;
+	color:rgb(51,51,51);
+	margin:0 auto;
+	font-size:3em
+}
+
+.section-subheading{
+	font-size:1.5em;
+	font-style:italic;
+	margin:25px auto;
+}
+h3{
+	font-size:2em;
+	font-style:none;
+	font-weight:700;
+	text-align:center;
+	margin:0px auto 30px;
+}
+.sponser-box {    
+    max-width: 650px;	
+}
+
+.sponser-box img{
+	margin:auto;
+}
+
+.sponser-caption{ 
+    width: 100%;
+    height: 100%;
+	padding:20px;
+	margin:0 auto;
+	max-width:400px;
+	text-align:center;
+    background-color:#ffffff;
+    
+}
+.sponser-caption .sponser-name{
+	font-weight:600;
+	color:rgb(51,51,51);
+	margin:0px auto 5px;
+}
+
+
+.sponser-caption{
+	
+	-webkit-transition: all ease .5s;
+	-moz-transition: all ease .5s;
+	transition: all ease .5s;
+}
+ a img:hover {
+	box-shadow:0px -1px 15px 1px #F16524;
+	background-clip:;
+}
+
+.sponser-caption:hover{
+	box-shadow:0px 4px 15px 1px #F16524;
+	background-clip:;
+}
+	
+hr{
+	border:2px solid #e7e7e7;
+}
+	
+.sep{
+	text-align:center;
+}
+
+.line-star{
+	position:relative;
+	top:-45px
+}
+
+.fa-times{
+	font-weight:100;
+}
+
+@media (max-width:767px){
+section{
+	padding-top:75px;
+	padding-bottom:75px;
+	}	
+}

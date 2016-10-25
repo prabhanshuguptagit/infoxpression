@@ -1,0 +1,15 @@
+Header add Access-Control-Allow-Origin "*"
+Header add Access-Control-Allow-Methods: "GET,POST,OPTIONS,DELETE,PUT"
+Header add Access-Control-Allow-Headers "origin, x-requested-with, content-type"
+RewriteEngine On
+RewriteRule ^user/(\d+)/?$ members.php?id=$1 [QSA]
+RewriteRule ^user/?$ members.php [QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ profile.php?username=$1 [L,QSA]
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
